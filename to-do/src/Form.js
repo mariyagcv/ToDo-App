@@ -40,7 +40,7 @@ class Form extends Component {
       <div className="wrapForm">
       <div className="flex-grid">
         <div className="col">
-        <input className = "noteInput" placeholder= "Add a task"
+        <input className = "noteInput" placeholder= "Write note"
         value={this.state.newContent}
         onChange={this.handleInputChange}/>
         </div>

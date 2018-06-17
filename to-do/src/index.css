@@ -26,7 +26,7 @@ li{display:inline}
   height: 100%;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   .flex-grid {
     display: block;
   }
@@ -71,7 +71,7 @@ p {
 	font-size: 22px;
 	font-weight: 500;
 	line-height: 36px;
-	margin: 0 0 24px 144px;
+	margin: 4 0 24px 144px;
 
 
   float:left;
