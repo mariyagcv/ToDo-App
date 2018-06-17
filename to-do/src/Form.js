@@ -20,7 +20,7 @@ class Form extends Component {
   //what the user inputs
   handleInputChange(event){
     this.setState({
-      newContent: event.target.value, 
+      newContent: event.target.value,
     })
   }
 
@@ -37,12 +37,18 @@ class Form extends Component {
 
   render (){
     return (
-      <div>
+      <div className="wrapForm">
+      <div className="flex-grid">
+        <div className="col">
         <input className = "noteInput" placeholder= "Add a task"
         value={this.state.newContent}
         onChange={this.handleInputChange}/>
-        <button className = "addButton"
+        </div>
+          <div className="col">
+        <button className = "btn center"
         onClick = {this.writeNewNote}>Add</button>
+          </div>
+          </div>
       </div>
     )
   }

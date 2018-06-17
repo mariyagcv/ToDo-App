@@ -86,7 +86,7 @@ class App extends Component {
     return (
       <div className="wrapper">
           <h1>Todo list </h1>
-          <div className="notesFooter">
+          <div className="formStyle">
             <Form createNote={this.createNote}/>
           </div>
         <div className="notesBody">
