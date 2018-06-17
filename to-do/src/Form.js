@@ -7,28 +7,23 @@ class Form extends Component {
   constructor (props)
   {
     super(props);
-    //state for the input, we want the state to be related
-    //with creating a new note
-    //at the beginning, the state has an empty note, but when
-    //the user starts typing, the value will of newContent will change
-    //to the value of the input
+    /*state for the input, we want the state to be related
+    with creating a new note
+    the user starts typing, the value will of newContent will change
+    to the value of the input */
     this.state = {newContent: '',};
-    //we need to bnd it
     this.handleInputChange = this.handleInputChange.bind(this);
     this.writeNewNote= this.writeNewNote.bind(this);
-
   }
 
   //when the user starts typing, we set the note content to
   //what the user inputs
   handleInputChange(event){
     this.setState({
-      newContent: event.target.value, //value of input
+      newContent: event.target.value, 
     })
   }
 
-
-  //consider renaming this method to clearInputBox !!! or something!
   writeNewNote(){
     //calling the createNote method from the parent element
     //and passing it the newContent (i.e the new note)

@@ -1,10 +1,18 @@
 body {
   width: 100%;
   min-height:100%;
-  background: white;
+  background: #F7F2E9;
   background-attachment: fixed;
   background-size: cover;
 }
+
+.flex-grid {
+  display: flex;
+}
+.col {
+  flex: 1;
+}
+li{display:inline}
 
 .wrapper {
   display: flex;
@@ -13,33 +21,42 @@ body {
   height: 100%;
 }
 
-.header{
+h1{
   color: #2b292b;
 	font-family: 'Cinzel Decorative';
-	font-size: 78px;
+	font-size: 80px;
 	font-weight: 400;
 	line-height: 76px;
 	margin-bottom: 72px;
+  text-align: center;
+}
+p {
+  color: white;
+	font-family: 'pt serif';
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 36px;
+	margin: 0 0 24px 144px;
+
+
+  float:left;
+  padding-right: 70px;
+  padding-bottom: 10px;
+  display: block;
 }
 
-/*
-.header {
-   color: #7c795d; font-family: 'Trocchi', serif;
-   font-size: 45px; font-weight: normal; line-height: 48px; margin: 0;
+.noteStyle{
+  padding:10px 10px 38px 34px;
+  height: auto;
+  margin: auto;
+  margin-bottom: 3px;
+  width: 50%;
+  font-size: 1.4em;
+  background-color: #403C34;
+  color: white;
+  border-radius: 3px;
+  opacity: 1;
 }
-
-.header {
-    position: absolute;
-    top: -155px;
-    width: 100%;
-    font-size: 100px;
-    font-weight: 100;
-    text-align: center;
-    color: rgba(175, 47, 47, 0.15);
-    -webkit-text-rendering: optimizeLegibility;
-    -moz-text-rendering: optimizeLegibility;
-    text-rendering: optimizeLegibility;
-} */
 
 .notesBody {
   padding-top: 24px;
@@ -89,7 +106,7 @@ body {
 }
 
 .closebtn {
-    color: #AA9;
+    color:#F7F2E9;
     font-weight: bold;
     float: right;
     cursor: pointer;
@@ -97,5 +114,5 @@ body {
 }
 
 .closebtn:hover {
-    color: #AC2500;
+    color: #B78D38;
 }

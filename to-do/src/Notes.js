@@ -7,7 +7,7 @@ import Form from './Form.js';
 class Notes extends Component{
   constructor(props){
     super(props);
-    this.notesContent = props.notesContent; //will get note notesContent from props
+    this.notesContent = props.notesContent;
     this.notesId = props.notesId;
   }
 
@@ -16,7 +16,7 @@ class Notes extends Component{
     //i.e that's a way of calling a parent method from the child
     this.props.removeNote(id);
   }
-  //renders the elements 
+  //renders the elements
   render(props){
     return(
       <div className="noteStyle">
