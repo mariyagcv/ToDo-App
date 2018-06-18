@@ -20,9 +20,11 @@ class Notes extends Component{
   render(props){
     return(
       <div className="noteStyle">
+
         <span className="closebtn"
         onClick={() => this.handleRemoveItem(this.notesId) }>X</span>
-        <p className="notesContent">{this.notesContent}</p>
+        <p className="notesContent"><input type="checkbox" class="checkbox" name="packersOff"/><label class="strikethrough">
+         {this.notesContent}</label></p>
       </div>
     )
   }

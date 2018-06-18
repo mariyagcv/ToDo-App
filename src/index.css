@@ -18,6 +18,18 @@ html,body{
   flex: 1;
 }
 
+input[type=checkbox]:checked + label.strikethrough{
+  text-decoration: line-through;
+}
+
+.checkbox{
+  margin: 15px;
+}
+
+.checkbox:hover{
+  cursor: pointer;
+}
+
 .wrapper {
   display: flex;
   flex: 1 1 auto;
