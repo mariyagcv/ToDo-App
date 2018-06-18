@@ -107,6 +107,10 @@ p {
     border-bottom: solid #2b292b;
     text-align: center;
     transition: 0.2s ease-out;
+        /*improving compatibility for mozilla, opera, safari/chrome */
+    -webkit-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
     width: 100%;
 }
 
@@ -114,6 +118,10 @@ p {
 
     color: #111;
     transition: 0.2s ease-in;
+    /*improving compatibility for mozilla, opera, safari/chrome */
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
 }
 
 
