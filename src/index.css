@@ -24,6 +24,7 @@ input[type=checkbox]:checked + label.strikethrough{
 
 .checkbox{
   margin: 15px;
+  float: left;
 }
 
 .checkbox:hover{
@@ -173,4 +174,12 @@ p {
     margin-right: 30%;
     margin-top: 8px;
   }
+  .checkbox{
+    float: left;
+    margin:0;
+  }
+  .noteStyle{
+    height: 20%;
+  }
+
 }
