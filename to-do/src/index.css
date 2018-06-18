@@ -17,7 +17,6 @@ html,body{
 .col {
   flex: 1;
 }
-li{display:inline}
 
 .wrapper {
   display: flex;
@@ -30,10 +29,13 @@ li{display:inline}
   .flex-grid {
     display: block;
   }
+  .noteInput{
+    color: pink;
+  }
 }
 
 .wrapForm {
-  margin-left:auto;
+margin-left:auto;
 margin-right:auto;
 width:50%;
 }
